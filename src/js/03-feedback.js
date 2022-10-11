@@ -24,7 +24,7 @@ function sendInfo(event) {
     messageForm.elements.email.value === '' ||
     messageForm.elements.message.value === ''
   ) {
-    message('Plz fill both inputs: email and message');
+    console.log('Plz fill both inputs: email and message');
     return;
   }
   const formInfo = {
