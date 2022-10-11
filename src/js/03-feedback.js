@@ -22,7 +22,7 @@ function sendInfo(event) {
   event.preventDefault();
   if (
     messageForm.elements.email.value === '' ||
-    messageForm.elements.email.email === ''
+    messageForm.elements.message.value === ''
   ) {
     return;
   }
