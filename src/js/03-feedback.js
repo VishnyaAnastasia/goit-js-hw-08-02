@@ -20,6 +20,12 @@ if (localStorage.getItem('feedback-form-state')) {
 
 function sendInfo(event) {
   event.preventDefault();
+  if (
+    messageForm.elements.email.value === '' ||
+    messageForm.elements.email.email === ''
+  ) {
+    return;
+  }
   const formInfo = {
     email: messageForm.elements.email.value,
     message: messageForm.elements.message.value,
